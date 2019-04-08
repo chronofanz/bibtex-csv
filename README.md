@@ -11,15 +11,12 @@ This program converts bibliography databases stored in the BibTeX / BibLaTeX for
 Dependencies
 ------------
 
-This script requires Python 3.3.3.
-It was not tested with other versions of Python.
-Python 2 will definitely not work.
+This script requires Python 3.x and Pandas.
 
 Usage
 -----
 
-Input is via standard input, output is via standard output.
-Files can be processed using your operating system's built in file pipe / redirection operators (see examples below).
+Input and output are text files.  Optionally, there's also a 'convert' method that users can leverage as part of their own data wrangling code.
 
 Examples
 --------
@@ -27,11 +24,5 @@ Examples
 * Converting a single .bib file:
 
 ```sh
-./convert.py < bibliography.bib > spreadsheet.csv
+./convert.py bibliography.bib spreadsheet.csv
 ```
-
-* Converting multiple .bib files:
-
-```sh
-cat *.bib | ./convert.py > spreadsheet.csv
-

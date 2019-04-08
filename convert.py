@@ -43,7 +43,7 @@ def parse_bib(handle):
 
 def convert(input_file, output_file):
     with open(input_file, 'r', encoding="utf8") as handle:
-        df = parse_bib(input_file)
+        df = parse_bib(handle)
         df.to_csv(output_file, encoding='utf-8-sig')
     
 if __name__ == "__main__":

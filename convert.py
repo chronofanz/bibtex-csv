@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
 
 """
-This is a simple (and probably broken) Python script that converts BibTeX
-entries to CSV.
-
-Input is via standard input.
-Output is via standard output.
+This is a simple Python script that converts BibTeX entries to CSV.
 """
 
 from re import match
